@@ -7,8 +7,7 @@ class Catalog
     private $itemsPrices;
 
     /**
-     * Catalog constructor.
-     *
+     * Catalog constructor
      * @param array $itemsPrices
      */
     public function __construct(array $itemsPrices)
@@ -19,7 +18,6 @@ class Catalog
     
     /**
      * Gets the unit/basic price for the sku
-     * 
      * @param string $sku
      */
     public function getUnitPrice(string $sku): float

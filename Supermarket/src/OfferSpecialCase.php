@@ -7,8 +7,7 @@ class OfferSpecialCase implements Offer
     private $multiDiscountOffer;
 
     /**
-     * OfferSpecialCase constructor.
-     *
+     * OfferSpecialCase constructor
      * @param array $multiDiscountOffer
      */
     public function __construct(array $multiDiscountOffer)
@@ -18,7 +17,6 @@ class OfferSpecialCase implements Offer
 
     /**
      * Get discount
-     * 
      * @param float $unitPrice
      * @param float $quantity
      */
@@ -32,7 +30,6 @@ class OfferSpecialCase implements Offer
                 $discount += intdiv($quantity, $this->amount) *
                     ($this->price - $this->amount * $unitPrice);
             }
-            
         }
         return $discount;
     }

@@ -8,8 +8,7 @@ class OfferXForY implements Offer
     private $price;
 
     /**
-     * OfferXForY constructor.
-     *
+     * OfferXForY constructor
      * @param float $amount
      * @param float $price
      */
@@ -21,7 +20,6 @@ class OfferXForY implements Offer
 
     /**
      * Calculates the discount
-     * 
      * @param float $unitPrice
      * @param float $quantity
      * @return float

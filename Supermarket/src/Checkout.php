@@ -10,7 +10,6 @@ class Checkout
 
     /**
      * Checkout constructor.
-     *
      * @param Catalog $catalog
      * @param array $offers
      */
@@ -22,7 +21,6 @@ class Checkout
 
     /**
      * Calculates the total price for the checkout items
-     * 
      * return float
      */
     public function getTotalPrice()
@@ -40,8 +38,7 @@ class Checkout
     }
 
     /**
-     * Scans the items and add their quantity 
-     * 
+     * Scans the items and add their quantity
      * @param string $sku
      */
     public function scanItems(string $sku)
@@ -54,7 +51,6 @@ class Checkout
 
     /**
      * To check if offer is available for given sku
-     * 
      * @param $sku
      * @return bool
      */

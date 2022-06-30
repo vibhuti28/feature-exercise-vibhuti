@@ -32,7 +32,6 @@ class SupermarketTest extends TestCase
         foreach (str_split($items) as $item) {
             $checkout->scanItems($item);
         }
-        
         // Perform Assert operation
         self::assertEquals($total, $checkout->getTotalPrice());
     }
